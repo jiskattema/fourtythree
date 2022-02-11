@@ -17,6 +17,8 @@ jobs:
       - name: Build
         run: hugo --minify
       
-      - name: SFTP Deploy
+      - name: Perpare Deploy
         run: apt-get update && apt-get install -y sshpass
+
+      - name: SFTP Deploy
         run: echo 'put -r public/*' | sshpass -p ${{ secrets.SFTP_PASSWORD }} sftp ${{ secrets.SFTP_USERNAME }}@sftp.fourtythree.org:/public/sites/www.fourtythree.org
