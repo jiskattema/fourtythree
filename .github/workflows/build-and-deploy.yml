@@ -18,7 +18,7 @@ jobs:
         run: hugo --minify
       
       - name: Perpare Deploy
-        run: sudo apt-get install -y openssh-client
+        run: echo "x ${{ secrets.SFTP_PASSWORD }} ${{ secrets.SFTP_USERNAME }} x"
 
       - name: SFTP Deploy
         run: echo 'put -r public/*' | sshpass -p ${{ secrets.SFTP_PASSWORD }} sftp ${{ secrets.SFTP_USERNAME }}@sftp.fourtythree.org:/public/sites/www.fourtythree.org
