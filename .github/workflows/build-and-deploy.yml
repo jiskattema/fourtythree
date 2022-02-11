@@ -12,7 +12,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.91.2'
+          hugo-version: 'latest'
       
       - name: Build
         run: hugo --minify
@@ -21,8 +21,8 @@ jobs:
         uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
         with:
           ftp_host: sftp.fourtythree.org
-          ftp_username: ${{ secrets.FTP_USERNAME }}
-          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          ftp_username: ${{ secrets.SFTP_USERNAME }}
+          ftp_password: ${{ secrets.SFTP_PASSWORD }}
           local_source_dir: "public"
           dist_target_dir: "/public/sites/www.fourtythree.org/"
           delete: "false"
