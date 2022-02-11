@@ -17,12 +17,5 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
-        with:
-          ftp_host: sftp.fourtythree.org
-          ftp_username: ${{ secrets.SFTP_USERNAME }}
-          ftp_password: ${{ secrets.SFTP_PASSWORD }}
-          local_source_dir: "public"
-          dist_target_dir: "/public/sites/www.fourtythree.org/"
-          delete: "false"
+      - name: SFTP Deploy
+        - run: echo 'put -r public/*' | sshpass -p ${{ secrets.SFTP_PASSWORD }} sftp ${{ secrets.SFTP_USERNAME }}@sftp.fourtythree.org:/public/sites/www.fourtythree.org
