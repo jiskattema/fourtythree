@@ -1,0 +1,158 @@
+baseURL: "http://fourtythree.org/"
+title: Fourtythree
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+# googleAnalytics: XX-DDD-XX
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageAltTitle: English
+        weight: 2
+        title: Fourtythree
+        profileMode:
+            enabled: true
+            imageUrl: "img/avatar.jpg"
+            imageTitle: jiskattema
+            imageWidth: 120
+            imageHeight: 120
+            subtitle: "if you want a little bit more"
+            buttons:
+                - name: Blog
+                  url: posts
+                - name: Tags
+                  url: tags
+                - name: Archives
+                  url: archives
+                - name: Search
+                  url: search/
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Fourtythree, if you want a little bit more"
+    author: Jisk Attema
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    # comments: false
+
+    socialIcons:
+        - name: github
+          title: my personal Github account
+          url: "https://github.com/jiskattema/"
+        - name: gitlab
+          title: my personal Gitlab account
+          url: "https://gitlab.com/attema"
+        - name: email
+          title: email me
+          url: "mailto://jiskattema@gmail.com"
+        - name: dev
+          title: datasets and software published at Zenodo
+          url: "https://zenodo.org/search?page=1&size=20&q=%22jisk%20attema%22%20%220000-0002-0948-1176%22&sort=mostrecent"
+        - name: cv
+          title: my Orcid page
+          url: "https://orcid.org/0000-0002-0948-1176"
+        - name: googlescholar
+          title: my publications at Google Scholar
+          url: "https://scholar.google.com/citations?user=q7JJsNYAAAAJ&hl=en"
+
+    editPost:
+        URL: "https://github.com/jiskattema/fourtythree/tree/main/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # label:
+    #     text: "Home"
+    #     icon: icon.png
+    #     iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    # assets:
+    #     favicon: "<link / abs url>"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #     hidden: false # hide everywhere but not in structured data
+    #     hiddenInList: false # hide on list pages and home
+    #     hiddenInSingle: false # hide on single page
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
