@@ -6,4 +6,5 @@ tags: ['hello world']
 categories: ['blog']
 ---
 
-Yeah! My first post using hugo
+Yeah! My first post using hugo.
+
