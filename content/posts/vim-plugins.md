@@ -1,7 +1,7 @@
 ---
 title: "Vim-plugins - which and why?"
 date: 2022-02-20T09:27:51+01:00
-draft: true
+draft: false
 tags: [vim]
 categories: [blog]
 ---
@@ -63,7 +63,8 @@ Create directories when needed: ```:e new_dir/new_file.txt```.
 
 ## [tpope/vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 
-Keymappings to toggle various options.
+Keymappings to toggle various options and to move around (buffer,
+argument, quickfix and location location lists)
 
 
 ## [tpope/vim-vinegar](https://github.com/tpope/vim-vinegar)
