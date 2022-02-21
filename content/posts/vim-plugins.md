@@ -80,7 +80,7 @@ and pop-up buffer selector (```|```).
 
 # Sporadic use
 
-## [brtastic/vim-vorg](https://github.com/jiskattema/vim-vorg)
+## [brtastic/vim-vorg](https://github.com/jiskattema/vim-vorg-md)
 
 My clone and personalization of (emacs) org-mode inspired notekeeping.
 
