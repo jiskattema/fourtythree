@@ -76,18 +76,18 @@ Press ```-``` to open a file browser.
 ## [skywind3000/vim-quickui](https://github.com/skywind3000/vim-quickui)
 
 Adds a menu bar (```<Leader><Leader>```) for seldom used commands,
-and pop-up window selector (```|```).
+and pop-up buffer selector (```|```).
 
 # Sporadic use
 
-## [brtastic/vim-vorg](https://github.com/brtastic/vim-vorg)
+## [brtastic/vim-vorg](https://github.com/jiskattema/vim-vorg)
 
 My clone and personalization of (emacs) org-mode inspired notekeeping.
 
 
 ## [joanrivera/vim-zimwiki-syntax](https://github.com/joanrivera/vim-zimwiki-syntax)
 
-Insert the [Zim Wiki](https://zim-wiki.org/) header to the current file.
+Syntax highlighting for [Zim Wiki](https://zim-wiki.org/) files.
 
 
 ## [mhinz/vim-signify](https://github.com/mhinz/vim-signify)
