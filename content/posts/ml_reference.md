@@ -81,6 +81,8 @@ Glorot and Xavier uniform / random initialization of weights and biases
 
 Activation function that mimicks dropout; assumes layers are normalized.
 
+## Loss functions
+
 ### Focal Loss for Dense Object Detection
 
 * [DOI: 10.48550/arXiv.1708.02002](https://doi.org/10.48550/arXiv.1708.02002)
@@ -89,8 +91,6 @@ Activation function that mimicks dropout; assumes layers are normalized.
 Lossfunction that focusses on uncertain items,
 and on mistakes where the certainty is high.
 Similar to cross-entropy.
-
-## Loss functions
 
 ## Supervised Contrastive Learning
 
